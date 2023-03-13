@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .pagina{
+            background-color:rgb(29, 29, 29)
+        }
+        .uno{
+            background-color: grey;
+            align-content: center;
+            text-align: center;
+        }
+        .dos{
+            background-color:dimgray;
+            text-align: center;
+        }
+        .encabezado{
+            background-color: black;
+            color: darkgoldenrod;
+            font-family:Verdana
+        }
+        .titulo{
+            text-align: center;
+            color: darkgoldenrod;
+        }
+        .link{
+            display: flex;
+            flex-direction: row;
+            justify-content:space-evenly;
+            margin: 20px;
+        }
+        .a{
+            text-decoration: none;
+        }
+        .a:link{
+            color: darkgoldenrod;
+        }
+        .a:visited{
+            color:rgb(94, 85, 4);
+
+        }
+        .a:focus{
+            border-bottom: 1px solid;
+            background-color: darkgoldenrod;
+        }
+        .a:hover{
+            border-bottom: 1px solid;
+            background-color: rgb(211, 155, 14);
+        }
+    </style>
+</head>
+<body class="pagina">
+    <h1 class="titulo" >MANUAL DE HTML</h1>
+    <div class="link">
+        <a href="#ultimo" id="arriba" class="a">IR AL FINAL</a>
+        <a href="paginas/texto.html" class="a" target="_blank">TEXTO</a>
+        <a href="https://siaan.ucb.edu.bo/login" target="_blank" class="a">CALIFICAR</a>
+    </div>
+    <table>
+        <thead>
+            <tr class="encabezado">
+                <th>Nombre del elemento</th>
+                <th>Descripcion</th>
+                <th>uso</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr class="uno">
+                <td>div</td>
+                <td>El elemento HTML "div" es el contenedor genérico para el contenido de flujo. No tiene ningún efecto sobre el contenido o el diseño hasta que se le aplica estilo de alguna manera usando CSS (por ejemplo, se le aplica estilo directamente o se aplica algún tipo de modelo de diseño como Flexbox a su elemento principal).</td>
+                <td>El elemento div debe usarse solo cuando ningún otro elemento semántico (como article o nav) sea apropiado.</td>
+            </tr>
+            <tr class="dos">
+                <td>h1</td>
+                <td>Los elementos de encabezado implementan seis niveles de encabezado del documento, 'h1' es el más importante, y 'h6', el menos importante. Un elemento de encabezado describe brevemente el tema de la sección que presenta.</td>
+                <td>La información de encabezado puede ser usada por los agentes usuarios, por ejemplo, para construir una tabla de contenidos para un documento automáticamente.</td>
+            </tr>
+            <tr class="uno">
+                <td>span</td>
+                <td> Es un contenedor en línea. Sirve para aplicar estilo al texto o agrupar elementos en línea.</td>
+                <td>Debe usarse solo cuando ningún otro elemento semántico sea apropiado. 'span' es muy parecido a un elemento 'div', pero 'div' es un elemento a nivel de bloque mientras que 'span' es un elemento en línea.</td>
+            </tr>
+            <tr class="dos">
+                <td> br </td>
+                <td> El elemento 'br' produce un salto de linea en un bloque de texto.</td>
+                <td>Es usado para escribir poemas o direcciones, cuando la division de lineas sea significativa</td>
+            </tr>
+            <tr class="uno">
+                <td>wbr</td>
+                <td> El elemento representa una oportunidad de salto de palabra: una posición dentro del texto donde el navegador puede opcionalmente romper una línea, aunque sus reglas de salto de línea no crearían un salto en esa ubicación.</td>
+                <td>Debe usarse para evitar dejar un signo de puntuación al final de la línea, que el lector podría confundir con el final de una URL.</td>
+            </tr>
+            <tr class="dos">
+                <td>sup</td>
+                <td> El elemento 'superíndice' especifica el texto en línea que se mostrará como superíndice únicamente por motivos tipográficos. Los superíndices generalmente se representan con una línea de base elevada usando texto más pequeño.</td>
+                <td>El elemento 'sup' solo debe usarse por razones tipográficas, es decir, para cambiar la posición del texto para cumplir con las convenciones o estándares tipográficos, en lugar de únicamente con fines de presentación o apariencia.</td>
+            </tr>
+            <tr class="uno">
+                <td>sub</td>
+                <td>El elemento 'subíndice' especifica el texto en línea que debe mostrarse como subíndice únicamente por razones tipográficas. Los subíndices generalmente se representan con una línea de base más baja usando texto más pequeño.</td>
+                <td>El elemento 'sub' debe usarse solo por razones tipográficas, es decir, para cambiar la posición del texto para cumplir con las convenciones o estándares tipográficos, en lugar de únicamente con fines de presentación o apariencia.</td>
+            </tr>
+            <tr class="dos">
+                <td>a</td>
+                <td>crea un enlace a otras páginas de internet, archivos o ubicaciones dentro de la misma página, direcciones de correo, o cualquier otra URL.</td>
+                <td>Se usa para redireccionar a paginas externas o internas por medio de un enlace.</td>
+            </tr>
+            <tr class="uno">
+                <td>body</td>
+                <td>Representa el contenido de un documento HTML. Solo puede haber unn elemento 'body' en todo el documento</td>
+                <td>Se usa para poner todo el contenido de una pagina o documento html</td>
+            </tr>
+            <tr class="dos">
+                <td>em</td>
+                <td>es el apropiado para marcar con énfasis las partes importantes de un texto. El elemento puede ser anidado, con cada nivel de anidamiento indicando un mayor grado de énfasis.</td>
+                <td>Se usa cuando se precisa simplemente resaltar un trozo de texto como si estuviese en un modo o voz diferente</td>
+            </tr>
+            <tr class="uno">
+                <td>img</td>
+                <td>El elemnto imagen HTML representa una imagen en el documento</td>
+                <td>Es el elemento usado para insertar imegenes en la pagina html</td>
+            </tr>
+            <tr class="dos">
+                <td>mark</td>
+                <td>El elemento mark HTML representa un texto marcado o resaltado.</td>
+                <td>Se usa para marcar un texto como referencia o anotación, debido a su relevancia en un contexto particular.</td>
+            </tr>
+            <tr class="uno">
+                <td>p</td>
+                <td>El elemento HTML 'p' representa un párrafo, Los párrafos son elementos a nivel de bloque y, en particular, se cerrarán automáticamente si se analiza otro elemento a nivel de bloque antes de la etiqueta de cierre '/p'.</td>
+                <td>Los párrafos generalmente se representan en los medios visuales como bloques de texto separados de los bloques adyacentes por líneas en blanco y/o sangría en la primera línea, pero los párrafos HTML pueden ser cualquier agrupación estructural de contenido relacionado, como imágenes o campos de formulario.</td>
+            </tr>
+            <tr class="dos">
+                <td>style</td>
+                <td>El elemento HTML 'style' contiene información de estilo para un documento o parte de un documento. Contiene CSS, que se aplica al contenido del documento que contiene el elemento 'style'.</td>
+                <td>El elemento 'style' debe incluirse dentro del 'head' del documento. En general, es mejor colocar sus estilos en hojas de estilo externas y aplicarlas usando elementos 'link'.</td>
+            </tr>
+            <tr class="uno">
+                <td>table</td>
+                <td>El elemento HTML 'table' representa datos tabulares, es decir, información presentada en una tabla bidimensional compuesta por filas y columnas de celdas que contienen datos.</td>
+                <td>El elemento tabla se usa para representar tablas en una pagina o documento HTML</td>
+            </tr>
+            <tr class="dos" id="ultimo">
+                <td>title</td>
+                <td>El elemento HTML 'título' define el título del documento que se muestra en la barra de título de un navegador o en la pestaña de una página. Solo contiene texto; las etiquetas dentro del elemento se ignoran.</td>
+                <td>El elemento 'título' siempre se usa dentro del bloque 'encabezado' de una página.</td>
+            </tr>
+        </tbody>
+    </table>
+    <a href="#arriba" class="link">Subir</a>
+</body>
+</html>
